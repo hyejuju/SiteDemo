@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .row
+        h4 Delete a D.I.C.E winner
+    form(action="", method="delete")
+        .form-group.row
+            label Year
+                input.form-control(name="year")
+        .form-group.row
+            label Game
+                input.form-control(name="game")
+        .form-group.row
+            label Team
+                input.form-control(name="team")
+        .form-group.row
+            button.btn-primary Delete

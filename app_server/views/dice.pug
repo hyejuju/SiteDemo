@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= 'D.I.C.E Awards winners since 2010'
+  ul
+    each winner in winners
+      li= winner.year + ': ' + winner.game + ' (' + winner.team + ')'
+    a(href='/dice/add') Add new D.I.C.E winner
+    br
+    a(href='/dice/delete') Delete a D.I.C.E winner
